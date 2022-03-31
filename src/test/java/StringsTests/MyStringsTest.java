@@ -7,7 +7,7 @@ import org.junit.Test;
 
 // Please rewrite the test part as the format I gave here.
 
-public class BasicStringsTest {
+public class MyStringsTest {
     private BasicStrings basicStrings;
 
     @Before
@@ -18,9 +18,9 @@ public class BasicStringsTest {
     @Test
     public void flipConcatTest1(){
         // Given
-        String string1 = " Bunny";
-        String string2 = "Bugs";
-        String expected = "Bugs Bunny";
+        String string1 = " World!";
+        String string2 = "Hello";
+        String expected = "Hello World!";
         // When
         String actual = basicStrings.flipConcat(string1, string2);
         // Then
@@ -30,9 +30,9 @@ public class BasicStringsTest {
     @Test
     public void flipConcatTest2(){
         // Given
-        String string1 = " Go";
-        String string2 = "Let's";
-        String expected = "Let's Go";
+        String string1 = " Morning";
+        String string2 = "Good";
+        String expected = "Good Morning";
         // When
         String actual = basicStrings.flipConcat(string1, string2);
         // Then
@@ -43,9 +43,9 @@ public class BasicStringsTest {
     @Test
     public void flipConcatTest3(){
         // Given
-        String string1 = "Mario!";
-        String string2 = "It's a me! ";
-        String expected = "It's a me! Mario!";
+        String string1 = "sunny day";
+        String string2 = "It's a ";
+        String expected = "It's a sunny day";
         // When
         String actual = basicStrings.flipConcat(string1, string2);
         // Then
@@ -55,7 +55,7 @@ public class BasicStringsTest {
     @Test
     public void getCharTest1(){
         // Given
-        String string1 = "You can do this!";
+        String string1 = "You cant believe this!";
         char expected = 'c';
         // When
         char actual = basicStrings.getChar(string1, 4);
@@ -66,10 +66,10 @@ public class BasicStringsTest {
     @Test
     public void getCharTest2(){
         // Given
-        String string1 = "You can do this!";
+        String string1 = "You are the best!";
         char expected = '!';
         // When
-        char actual = basicStrings.getChar(string1, 15);
+        char actual = basicStrings.getChar(string1, 16);
         // Then
         Assert.assertEquals(expected, actual);
     }
@@ -77,8 +77,8 @@ public class BasicStringsTest {
     @Test
     public void iCantSeeTest1(){
         // Given
-        String string1 = "Haters";
-        String expected = "      ";
+        String string1 = "Love";
+        String expected = "    ";
         // When
         String actual = basicStrings.iCantSee(string1);
         // Then
@@ -88,8 +88,8 @@ public class BasicStringsTest {
     @Test
     public void iCantSeeTest2(){
         // Given
-        String string1 = "I Can't Do It";
-        String expected = "             ";
+        String string1 = "Pink Notes";
+        String expected = "          ";
         // When
         String actual = basicStrings.iCantSee(string1);
         // Then
@@ -99,8 +99,8 @@ public class BasicStringsTest {
     @Test
     public void iCantSeeTest3(){
         // Given
-        String string1 = "";
-        String expected = "";
+        String string1 = " ";
+        String expected = " ";
         // When
         String actual = basicStrings.iCantSee(string1);
         // Then
@@ -110,8 +110,8 @@ public class BasicStringsTest {
     @Test
     public void loudAndClearTest1(){
         // Given
-        String string = "";
-        String expected = "";
+        String string = "hi";
+        String expected = "HI";
         // When
         String actual = basicStrings.loudAndClear(string);
         // Then
@@ -121,8 +121,8 @@ public class BasicStringsTest {
     @Test
     public void loudAndClearTest2(){
         // Given
-        String string = "lEt mE hEaR yOu";
-        String expected = "LET ME HEAR YOU";
+        String string = "lEt Me Go";
+        String expected = "LET ME GO";
         // When
         String actual = basicStrings.loudAndClear(string);
         // Then
@@ -132,8 +132,8 @@ public class BasicStringsTest {
     @Test
     public void reverseCaseTest1(){
         // Given
-        String string = "lEt mE hEaR yOu";
-        String expected = "LeT Me HeAr YoU";
+        String string = "oMg";
+        String expected = "OmG";
         // When
         String actual = basicStrings.reverseCase(string);
         // Then
@@ -143,8 +143,8 @@ public class BasicStringsTest {
     @Test
     public void reverseCaseTest2(){
         // Given
-        String string = "I love Y'ALL!";
-        String expected = "i LOVE y'all!";
+        String string = "LoVe NeW YoRk";
+        String expected = "lOvE nEw yOrK";
         // When
         String actual = basicStrings.reverseCase(string);
         // Then
@@ -165,9 +165,9 @@ public class BasicStringsTest {
     @Test
     public void oneAtATimeTest(){
         // Given
-        String string1 = "";
-        String string2 = "";
-        String expected = "";
+        String string1 = "hi";
+        String string2 = "hello";
+        String expected = "hhiello";
         // When
         String actual = basicStrings.oneAtATime(string1, string2);
         // Then
@@ -177,9 +177,9 @@ public class BasicStringsTest {
     @Test
     public void oneAtATimeTest2(){
         // Given
-        String string1 = "W abs";
-        String string2 = "ed et";
-        String expected = "We da best";
+        String string1 = "qwer";
+        String string2 = "uiop";
+        String expected = "quwieorp";
         // When
         String actual = basicStrings.oneAtATime(string1, string2);
         // Then
@@ -189,9 +189,9 @@ public class BasicStringsTest {
     @Test
     public void oneAtATimeTest3(){
         // Given
-        String string1 = "Chr 9.0";
-        String string2 = "oot";
-        String expected = "Cohort 9.0";
+        String string1 = "jv rjc";
+        String string2 = "aapoet";
+        String expected = "java project";
         // When
         String actual = basicStrings.oneAtATime(string1, string2);
         // Then
